@@ -58,12 +58,11 @@ nav, .frontpage-h1 {
     background: rgb(255, 202, 87);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .cta:hover {
     background: rgb(252, 192, 63);
-    font-size: 1.1rem;
 }
 
 .header-container {
@@ -106,7 +105,7 @@ nav a {
     font-weight: bold;
     padding: 10px;
     margin-top: 5px;
-    transition: 0.5s;
+    transition: 0.4s;
     color: #fff;
 }
 
@@ -122,9 +121,9 @@ nav a:hover {
     display: none;
   }
   
-  .icon-burger:hover {
+  .modal:hover, .header-image:hover, .modal-images:hover, .icon-burger:hover {
     cursor: pointer;
-  }
+}
   
   .icon-burger {
     padding-left: 10px;
@@ -151,10 +150,6 @@ nav a:hover {
 
   .modal-image {
       width: 50%;
-  }
-
-  .modal:hover, .header-image:hover {
-      cursor: pointer;
   }
 
   /* FOOTER */

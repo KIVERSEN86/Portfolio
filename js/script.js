@@ -1,18 +1,24 @@
-const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector("body");
+const modal = document.querySelector(".modal");
+
 
 function createModal() {
     const imgModal = document.querySelector(".modal-image");
-    const imgsModal = document.querySelector(".header-image");
-
-    imgsModal.addEventListener("click", ()=> {
-        imgModal.src = imgsModal.src;
-
-        modal.style.display = "flex";
-    })
+    const imgsModal = modalContainer.querySelectorAll("img");
+    
+    for (let i = 0; i < imgsModal.length; i ++) {
+        imgsModal[i].addEventListener("click", ()=> {
+            imgModal.src = imgsModal[i].src;
+    
+            modal.style.display = "flex";
+        }) 
+    } 
+    
     modal.addEventListener("click", ()=> {
+        
         modal.style.display = "none";
     })
-
 }
-createModal();
+createModal(); 
+
+
