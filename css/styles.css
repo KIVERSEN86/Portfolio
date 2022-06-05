@@ -87,6 +87,11 @@ nav, .frontpage-h1 {
     color: #fff;
 }
 
+.rotate90 {
+    transform: rotate(90deg);
+    transition: 0.3s;
+  }
+
 /* NAV */
 
 .nav-container {
