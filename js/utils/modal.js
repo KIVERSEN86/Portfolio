@@ -20,10 +20,3 @@ const createModal = () => {
     })
 }
 createModal(); 
-
-const hamburgerMenu = document.querySelector(".icon-burger");
-
-hamburgerMenu.onclick = () => {
-
-    event.target.classList.toggle("rotate90");
-}
